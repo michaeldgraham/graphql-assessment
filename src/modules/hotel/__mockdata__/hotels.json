@@ -1,0 +1,994 @@
+[
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75235",
+      "stateCode": "TX",
+      "street": "4800 Harry Hines Blvd"
+    },
+    "coordinate": {
+      "latitude": 32.808785,
+      "longitude": -96.832177
+    },
+    "id": "DALAAHT",
+    "name": "Home2 Suites by Hilton Dallas Medical District Lovefield",
+    "status": "P"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75231",
+      "stateCode": "TX",
+      "street": "10350 N Central Expy"
+    },
+    "coordinate": {
+      "latitude": 32.886645,
+      "longitude": -96.768795
+    },
+    "currencyCode": "USD",
+    "id": "DALCEGI",
+    "name": "Hilton Garden Inn Dallas Central Expy North Park Area",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75212",
+      "stateCode": "TX",
+      "street": "NEQ of I-30 and Cockrell Hill Rd"
+    },
+    "coordinate": {
+      "latitude": 32.7696495594,
+      "longitude": -96.8962299951
+    },
+    "currencyCode": "USD",
+    "id": "DALCHHT",
+    "name": "Home2 Suites by Hilton Dallas I-30 Cockrell Hill",
+    "status": "P"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75206",
+      "stateCode": "TX",
+      "street": "5300 E Mockingbird Lane"
+    },
+    "coordinate": {
+      "latitude": 32.8361371876,
+      "longitude": -96.777954887
+    },
+    "currencyCode": "USD",
+    "id": "DALCUQQ",
+    "name": "The Highland Dallas, Curio Collection by Hilton",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75201",
+      "stateCode": "TX",
+      "street": "1700 Commerce Street"
+    },
+    "coordinate": {
+      "latitude": 32.7801419021,
+      "longitude": -96.7963902935
+    },
+    "currencyCode": "USD",
+    "id": "DALDXHX",
+    "name": "Hampton Inn & Suites Dallas Downtown",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75202",
+      "stateCode": "TX",
+      "street": "1025 Elm Street"
+    },
+    "coordinate": {
+      "latitude": 32.7811,
+      "longitude": -96.8028
+    },
+    "currencyCode": "USD",
+    "id": "DALELHW",
+    "name": "Homewood Suites by Hilton® Dallas Downtown, TX",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75240",
+      "stateCode": "TX",
+      "street": "14021 Noel Road"
+    },
+    "coordinate": {
+      "latitude": 32.938362,
+      "longitude": -96.818825
+    },
+    "currencyCode": "USD",
+    "id": "DALESES",
+    "name": "Embassy Suites by Hilton Dallas Near the Galleria",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75207",
+      "stateCode": "TX",
+      "street": "2727 N. Stemmons Freeway"
+    },
+    "coordinate": {
+      "latitude": 32.807636,
+      "longitude": -96.844925
+    },
+    "currencyCode": "USD",
+    "id": "DALFWES",
+    "name": "Embassy Suites by Hilton Dallas Market Center",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75243",
+      "stateCode": "TX",
+      "street": "9169 Markville Drive"
+    },
+    "coordinate": {
+      "latitude": 32.914078,
+      "longitude": -96.742569
+    },
+    "currencyCode": "USD",
+    "id": "DALGVHW",
+    "name": "Homewood Suites by Hilton Dallas-Park Central Area",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75220",
+      "stateCode": "TX",
+      "street": "3880 West Northwest Highway"
+    },
+    "coordinate": {
+      "latitude": 32.861343,
+      "longitude": -96.853394
+    },
+    "currencyCode": "USD",
+    "id": "DALLFES",
+    "name": "Embassy Suites by Hilton Dallas Love Field",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75235",
+      "stateCode": "TX",
+      "street": "3300 West Mockingbird Lane"
+    },
+    "coordinate": {
+      "latitude": 32.833935,
+      "longitude": -96.83609
+    },
+    "currencyCode": "USD",
+    "id": "DALLODT",
+    "name": "DoubleTree by Hilton Hotel Dallas - Love Field",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75207",
+      "stateCode": "TX",
+      "street": "2325 North Stemmons Freeway"
+    },
+    "coordinate": {
+      "latitude": 32.8023,
+      "longitude": -96.8325
+    },
+    "currencyCode": "USD",
+    "id": "DALMAGI",
+    "name": "Hilton Garden Inn Dallas/Market Center",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75207",
+      "stateCode": "TX",
+      "street": "2747 North Stemmons Freeway"
+    },
+    "coordinate": {
+      "latitude": 32.80849,
+      "longitude": -96.845295
+    },
+    "currencyCode": "USD",
+    "id": "DALMCHW",
+    "name": "Homewood Suites by Hilton Dallas-Market Center",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75207",
+      "stateCode": "TX",
+      "street": "2015 Market Center Blvd"
+    },
+    "coordinate": {
+      "latitude": 32.797386,
+      "longitude": -96.825989
+    },
+    "currencyCode": "USD",
+    "id": "DALMKDT",
+    "name": "DoubleTree by Hilton Hotel Dallas - Market Center",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75201",
+      "stateCode": "TX",
+      "street": "1600 Pacific Avenue"
+    },
+    "coordinate": {
+      "latitude": 32.7819884501,
+      "longitude": -96.7989915371
+    },
+    "currencyCode": "USD",
+    "id": "DALPAGI",
+    "name": "Hilton Garden Inn Downtown Dallas",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75225",
+      "stateCode": "TX",
+      "street": "5954 Luther Lane"
+    },
+    "coordinate": {
+      "latitude": 32.863232,
+      "longitude": -96.809738
+    },
+    "currencyCode": "USD",
+    "id": "DALPCHF",
+    "name": "Hilton Dallas/Park Cities",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75247",
+      "stateCode": "TX",
+      "street": "3051 N Stemmons Freeway"
+    },
+    "coordinate": {
+      "latitude": 32.811506,
+      "longitude": -96.858195
+    },
+    "currencyCode": "USD",
+    "id": "DALPPHX",
+    "name": "Hampton Inn & Suites Dallas Market Center",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75252",
+      "stateCode": "TX",
+      "street": "SEQ of George Bush Turnpike and Coi"
+    },
+    "coordinate": {
+      "latitude": 32.9984357673,
+      "longitude": -96.7594886808
+    },
+    "currencyCode": "USD",
+    "id": "DALRCRU",
+    "name": "Tru by Hilton Dallas Richardson",
+    "status": "P"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75243",
+      "stateCode": "TX",
+      "street": "13131 North Central Expressway"
+    },
+    "coordinate": {
+      "latitude": 32.927437,
+      "longitude": -96.762885
+    },
+    "currencyCode": "USD",
+    "id": "DALTXES",
+    "name": "Embassy Suites by Hilton Dallas Park Central Area",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "postalCode": "75244",
+      "stateCode": "TX",
+      "street": "4099 Valley View Lane"
+    },
+    "coordinate": {
+      "latitude": 32.926647,
+      "longitude": -96.842628
+    },
+    "currencyCode": "USD",
+    "id": "DALVVDT",
+    "name": "DoubleTree by Hilton Hotel Dallas Near the Galleria",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "SW7 4ER",
+      "street": "100 Cromwell Road"
+    },
+    "coordinate": {
+      "latitude": 51.495086,
+      "longitude": -0.183754
+    },
+    "currencyCode": "GBP",
+    "id": "LCYSKDI",
+    "name": "DoubleTree by Hilton London Kensington",
+    "status": "U"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "W11 4UL",
+      "street": "179-199 Holland Park Avenue"
+    },
+    "coordinate": {
+      "latitude": 51.505,
+      "longitude": -0.2139
+    },
+    "currencyCode": "GBP",
+    "id": "LHRHITW",
+    "name": "Hilton London Kensington",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "WC1B 4BH",
+      "street": "92 Southampton Row"
+    },
+    "coordinate": {
+      "latitude": 51.520065,
+      "longitude": -0.12218
+    },
+    "currencyCode": "GBP",
+    "id": "LHRLBDI",
+    "name": "DoubleTree by Hilton Hotel London - West End",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "W14 8NL",
+      "street": "380 Kensington High Street"
+    },
+    "coordinate": {
+      "latitude": 51.49655,
+      "longitude": -0.206659
+    },
+    "currencyCode": "GBP",
+    "id": "LHROLHN",
+    "name": "Hilton London Olympia",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "street": "17-33 Westland Place"
+    },
+    "coordinate": {
+      "latitude": 51.528914,
+      "longitude": -0.090445
+    },
+    "currencyCode": "GBP",
+    "id": "LHROSHX",
+    "name": "Hampton by Hilton London Old Street",
+    "status": "U"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "US",
+      "postalCode": "40741",
+      "stateCode": "KY",
+      "street": "200 Alamo Drive"
+    },
+    "coordinate": {
+      "latitude": 37.1508,
+      "longitude": -84.1171
+    },
+    "currencyCode": "USD",
+    "id": "LNDNOHX",
+    "name": "Hampton Inn London-North",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "E16TQ",
+      "street": "12-20 Osborne Street, London. E1 6T"
+    },
+    "coordinate": {
+      "latitude": 51.516706,
+      "longitude": -0.069734
+    },
+    "id": "LONARHX",
+    "name": "Hampton by Hilton London City",
+    "status": "U"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "street": "3  5 Ludgate Hill, Ludgate Hill, Lo"
+    },
+    "coordinate": {
+      "latitude": 51.5137279,
+      "longitude": -0.1012618
+    },
+    "id": "LONCCQQ",
+    "name": "Lost Property St. Paul's London, Curio Collection by Hilton",
+    "status": "U"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "SW1H 0BH",
+      "street": "22-28 Broadway"
+    },
+    "coordinate": {
+      "latitude": 51.499286,
+      "longitude": -0.132952
+    },
+    "currencyCode": "GBP",
+    "id": "LONCOCI",
+    "name": "Conrad London St. James",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "E14 9BD",
+      "street": "2 Lincoln Plaza"
+    },
+    "coordinate": {
+      "latitude": 51.4983054749,
+      "longitude": -0.0193982867
+    },
+    "currencyCode": "GBP",
+    "id": "LONCUQQ",
+    "name": "Lincoln Plaza London, Curio Collection by Hilton",
+    "status": "T"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "E14 9SH",
+      "street": "South Quay, Marsh Wall"
+    },
+    "coordinate": {
+      "latitude": 51.500859,
+      "longitude": -0.019661
+    },
+    "currencyCode": "GBP",
+    "id": "LONCWHI",
+    "name": "Hilton London Canary Wharf",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "E16 2FQ",
+      "street": "Dockside Road"
+    },
+    "coordinate": {
+      "latitude": 51.5086872033,
+      "longitude": 0.04092218607
+    },
+    "currencyCode": "GBP",
+    "id": "LONDLHX",
+    "name": "Hampton by Hilton London Docklands",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "W5 5TL",
+      "street": "111 Uxbridge Road"
+    },
+    "coordinate": {
+      "latitude": 51.511587972,
+      "longitude": -0.31381447478
+    },
+    "currencyCode": "GBP",
+    "id": "LONEAHX",
+    "name": "Hampton by Hilton London Ealing",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "street": "Embassy Gardens, Nine Elms"
+    },
+    "coordinate": {
+      "latitude": 51.482592,
+      "longitude": -0.13302
+    },
+    "id": "LONEGHX",
+    "name": "Hampton by Hilton London Vauxhall Nine Elms",
+    "status": "P"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "SW1A2WH",
+      "street": "The Mall"
+    },
+    "coordinate": {
+      "latitude": 51.506819594,
+      "longitude": -0.12865477679
+    },
+    "id": "LONENWA",
+    "name": "Waldorf Astoria London Admiralty Arch",
+    "status": "U"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "WC1H 0HT",
+      "street": "17 - 18 Upper Woburn Place"
+    },
+    "coordinate": {
+      "latitude": 51.5268,
+      "longitude": -0.1307
+    },
+    "currencyCode": "GBP",
+    "id": "LONEUHI",
+    "name": "Hilton London Euston",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "E16 1RH",
+      "street": "Excel, 2 Festoon Way"
+    },
+    "coordinate": {
+      "latitude": 51.5074782762,
+      "longitude": 0.03873813621
+    },
+    "currencyCode": "GBP",
+    "id": "LONEXDI",
+    "name": "DoubleTree by Hilton Hotel London ExCel",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "W1K 2HP",
+      "street": "44 Grosvenor Square"
+    },
+    "coordinate": {
+      "latitude": 51.510801,
+      "longitude": -0.151043
+    },
+    "currencyCode": "GBP",
+    "id": "LONGSOL",
+    "name": "The Biltmore Mayfair, LXR Hotels & Resorts",
+    "status": "T"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "postalCode": "SE10 8BB",
+      "street": "Catherine Grove Greenwich"
+    },
+    "coordinate": {
+      "latitude": 51.4743459256,
+      "longitude": -0.01948488472
+    },
+    "currencyCode": "GBP",
+    "id": "LONGWDI",
+    "name": "DoubleTree by Hilton London Greenwich",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "London",
+      "countryCode": "GB",
+      "street": "242 Bath Road"
+    },
+    "coordinate": {
+      "latitude": 51.481475,
+      "longitude": -0.447154
+    },
+    "currencyCode": "GBP",
+    "id": "LONHBHX",
+    "name": "Hampton by Hilton London Heathrow Bath Road",
+    "status": "P"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10004",
+      "stateCode": "NY",
+      "street": "8 Stone Street"
+    },
+    "coordinate": {
+      "latitude": 40.704,
+      "longitude": -74.0126
+    },
+    "currencyCode": "USD",
+    "id": "NYCBPDT",
+    "name": "DoubleTree by Hilton New York Downtown",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10001-6102",
+      "stateCode": "NY",
+      "street": "121 West 28th Street"
+    },
+    "coordinate": {
+      "latitude": 40.74670831204,
+      "longitude": -73.99199992418
+    },
+    "currencyCode": "USD",
+    "id": "NYCCHGI",
+    "name": "Hilton Garden Inn New York/Manhattan-Chelsea",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10282",
+      "stateCode": "NY",
+      "street": "102 North End Avenue"
+    },
+    "coordinate": {
+      "latitude": 40.715088,
+      "longitude": -74.015587
+    },
+    "currencyCode": "USD",
+    "id": "NYCCICI",
+    "name": "Conrad New York Downtown",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10001",
+      "stateCode": "NY",
+      "street": "128 West 29th Street"
+    },
+    "coordinate": {
+      "latitude": 40.7471,
+      "longitude": -73.9913
+    },
+    "currencyCode": "USD",
+    "id": "NYCCLDT",
+    "name": "DoubleTree by Hilton Hotel New York City - Chelsea",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10019",
+      "stateCode": "NY",
+      "street": "151 W 54th Street"
+    },
+    "coordinate": {
+      "latitude": 40.7635685719,
+      "longitude": -73.9806984681
+    },
+    "currencyCode": "USD",
+    "id": "NYCCNCI",
+    "name": "Conrad New York Midtown",
+    "status": "T"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10019",
+      "stateCode": "NY",
+      "street": "101 W. 57th Street"
+    },
+    "coordinate": {
+      "latitude": 40.764712,
+      "longitude": -73.977382
+    },
+    "currencyCode": "USD",
+    "id": "NYCCPGV",
+    "name": "The Quin Central Park by Hilton Club",
+    "status": "T"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10011",
+      "stateCode": "NY",
+      "street": "108 West 24th Street"
+    },
+    "coordinate": {
+      "latitude": 40.743628,
+      "longitude": -73.992754
+    },
+    "currencyCode": "USD",
+    "id": "NYCCSHX",
+    "name": "Hampton Inn Manhattan-Chelsea",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10001",
+      "stateCode": "NY",
+      "street": "113 West 24th Street"
+    },
+    "coordinate": {
+      "latitude": 40.744227,
+      "longitude": -73.992989
+    },
+    "currencyCode": "USD",
+    "id": "NYCDLUA",
+    "name": "Motto by Hilton New York City Chelsea",
+    "status": "U"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10022",
+      "stateCode": "NY",
+      "street": "569 Lexington Avenue"
+    },
+    "coordinate": {
+      "latitude": 40.757,
+      "longitude": -73.9718
+    },
+    "currencyCode": "USD",
+    "id": "NYCDTDT",
+    "name": "DoubleTree by Hilton Hotel Metropolitan - New York City",
+    "status": "T"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10001",
+      "stateCode": "NY",
+      "street": "59 W. 35th Street"
+    },
+    "coordinate": {
+      "latitude": 40.7502471578,
+      "longitude": -73.9864366048
+    },
+    "currencyCode": "USD",
+    "id": "NYCEMHX",
+    "name": "Hampton Inn Manhattan-35th St/Empire State Bldg",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10016",
+      "stateCode": "NY",
+      "street": "45 East 33rd Street"
+    },
+    "coordinate": {
+      "latitude": 40.7468019533,
+      "longitude": -73.9823477325
+    },
+    "currencyCode": "USD",
+    "id": "NYCETGI",
+    "name": "Hilton Garden Inn New York/Midtown Park Ave",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10004",
+      "stateCode": "NY",
+      "street": "6 Water Street"
+    },
+    "coordinate": {
+      "latitude": 40.7029382185,
+      "longitude": -74.0122266681
+    },
+    "currencyCode": "USD",
+    "id": "NYCFCGI",
+    "name": "Hilton Garden Inn NYC Financial Center/Manhattan Downtown",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10001",
+      "stateCode": "NY",
+      "street": "152 West 26th Street"
+    },
+    "coordinate": {
+      "latitude": 40.7458,
+      "longitude": -73.9938
+    },
+    "currencyCode": "USD",
+    "id": "NYCFDHF",
+    "name": "Hilton New York Fashion District",
+    "status": "T"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10036-7203",
+      "stateCode": "NY",
+      "street": "220 West 41st St."
+    },
+    "coordinate": {
+      "latitude": 40.7557415937,
+      "longitude": -73.9886725871
+    },
+    "currencyCode": "USD",
+    "id": "NYCFFHX",
+    "name": "Hampton Inn Manhattan/Times Square Central",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10019",
+      "stateCode": "NY",
+      "street": "1335 Avenue of the Americas"
+    },
+    "coordinate": {
+      "latitude": 40.7623,
+      "longitude": -73.9786
+    },
+    "currencyCode": "USD",
+    "id": "NYCGVGV",
+    "name": "The Hilton Club - New York",
+    "status": "T"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10001-3401",
+      "stateCode": "NY",
+      "street": "116 West 31st Street"
+    },
+    "coordinate": {
+      "latitude": 40.748055,
+      "longitude": -73.990181
+    },
+    "currencyCode": "USD",
+    "id": "NYCHSHX",
+    "name": "Hampton Inn Manhattan-Madison Square Garden Area",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10017",
+      "stateCode": "NY",
+      "street": "12 East 48th Street"
+    },
+    "coordinate": {
+      "latitude": 40.756755,
+      "longitude": -73.97733
+    },
+    "currencyCode": "USD",
+    "id": "NYCKPGV",
+    "name": "The Central at 5th by Hilton Club",
+    "status": "U"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10018",
+      "stateCode": "NY",
+      "street": "337 West 39th Street"
+    },
+    "coordinate": {
+      "latitude": 40.7561,
+      "longitude": -73.9932
+    },
+    "currencyCode": "USD",
+    "id": "NYCMAHX",
+    "name": "Hampton Inn Manhattan/Times Square South",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10036",
+      "stateCode": "NY",
+      "street": "145 West 44th Street"
+    },
+    "coordinate": {
+      "latitude": 40.757081,
+      "longitude": -73.984742
+    },
+    "currencyCode": "USD",
+    "id": "NYCMBDT",
+    "name": "Millennium Times Square New York",
+    "status": "O"
+  },
+  {
+    "address": {
+      "city": "New York",
+      "countryCode": "US",
+      "postalCode": "10022",
+      "stateCode": "NY",
+      "street": "206 East 52nd Street"
+    },
+    "coordinate": {
+      "latitude": 40.7567420579,
+      "longitude": -73.9693979078
+    },
+    "currencyCode": "USD",
+    "id": "NYCMEGI",
+    "name": "Hilton Garden Inn New York/Manhattan-Midtown East",
+    "status": "O"
+  }
+]

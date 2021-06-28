@@ -1,0 +1,35 @@
+mutation createReservationMutation($input: ReservationInput!) {
+  createReservation(input: $input) {
+    arrivalDate
+    confirmationNumber
+    departureDate
+    hotelId
+    rooms {
+      number
+      priceAmountAfterTax
+      priceAmountBeforeTax
+      taxAmount
+    }
+    status
+    user {
+      address {
+        street
+        city
+        postalCode
+        stateCode
+        countryCode
+      }
+      creditCard {
+        cvv
+        expirationDate
+        number
+        type
+      }
+      email
+      name {
+        firstName
+        lastName
+      }
+    }
+  }
+}

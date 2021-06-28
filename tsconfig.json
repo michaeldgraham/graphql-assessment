@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@gql/common": ["src/common"],
+      "@gql/module/common": ["src/modules/common"],
+      "@gql/module/hotel": ["src/modules/hotel"],
+      "@gql/module/room-inventory": ["src/modules/room-inventory"],
+      "@gql/module/reservation": ["src/modules/reservation"],
+      "@gql/module/weather": ["src/modules/weather"]
+    }
+  },
+  "include": ["src/**/*", "src/**/*.json"]
+}

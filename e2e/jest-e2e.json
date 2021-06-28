@@ -1,0 +1,18 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".*\\.e2e-spec\\.ts$",
+  "testTimeout": 60000,
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@gql/common": ["<rootDir>/../src/common"],
+    "@gql/module/common": ["<rootDir>/../src/modules/common"],
+    "@gql/module/hotel": ["<rootDir>/../src/modules/hotel"],
+    "@gql/module/room-inventory": ["<rootDir>/../src/modules/room-inventory"],
+    "@gql/module/reservation": ["<rootDir>/../src/modules/reservation"],
+    "@gql/module/weather": ["<rootDir>/../src/modules/weather"]
+  }
+}

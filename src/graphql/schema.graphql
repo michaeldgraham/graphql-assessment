@@ -1,0 +1,154 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Address {
+  city: String!
+  countryCode: String!
+  postalCode: String
+  stateCode: String
+  street: String!
+}
+
+input AddressInput {
+  city: String!
+  countryCode: String!
+  postalCode: String
+  stateCode: String
+  street: String!
+}
+
+type Coordinate {
+  latitude: Float!
+  longitude: Float!
+}
+
+type CreditCard {
+  cvv: String!
+  expirationDate: DateTime!
+  number: String!
+  type: CreditCardType!
+}
+
+input CreditCardInput {
+  cvv: String!
+  expirationDate: DateTime!
+  number: String!
+  type: CreditCardType!
+}
+
+enum CreditCardType {
+  AMERICAN_EXPRESS
+  DISCOVER
+  MASTER_CARD
+  VISA
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Hotel {
+  address: Address!
+  coordinate: Coordinate!
+  currencyCode: String!
+  id: ID!
+  name: String!
+  status: HotelStatus!
+  weather: Weather
+}
+
+input HotelArgs {
+  hotelId: String!
+}
+
+enum HotelStatus {
+  CLOSED
+  OPEN
+  PRE_OPEN
+  UNDER_CONSTRUCTION
+}
+
+type Mutation {
+  createReservation(input: ReservationInput!): Reservation!
+}
+
+type Name {
+  firstName: String!
+  lastName: String!
+}
+
+input NameInput {
+  firstName: String!
+  lastName: String!
+}
+
+type Query {
+  hotel(args: HotelArgs!): Hotel!
+  reservation(args: ReservationArgs!): Reservation!
+}
+
+type Reservation {
+  arrivalDate: DateTime!
+  confirmationNumber: Int!
+  departureDate: DateTime!
+  hotelId: String!
+  rooms: [Room!]!
+  status: ReservationStatus!
+  user: User!
+}
+
+input ReservationArgs {
+  confirmationNumber: Int!
+}
+
+input ReservationInput {
+  arrivalDate: DateTime!
+  departureDate: DateTime!
+  hotelId: String!
+  rooms: [RoomInput!]!
+  user: UserInput!
+}
+
+enum ReservationStatus {
+  CANCELLED
+  CHECKED_IN
+  CHECKED_OUT
+  CONFIRMED
+  IN_HOUSE
+}
+
+type Room {
+  number: Float!
+  priceAmountAfterTax: Float!
+  priceAmountBeforeTax: Float!
+  taxAmount: Float!
+}
+
+input RoomInput {
+  number: Float!
+}
+
+type User {
+  address: Address!
+  creditCard: CreditCard!
+  email: String!
+  name: Name!
+}
+
+input UserInput {
+  address: AddressInput!
+  creditCard: CreditCardInput!
+  email: String!
+  name: NameInput!
+}
+
+type Weather {
+  feelsLike: Float!
+  humidity: Float!
+  pressure: Float!
+  temp: Float!
+  tempMax: Float!
+  tempMin: Float!
+}
