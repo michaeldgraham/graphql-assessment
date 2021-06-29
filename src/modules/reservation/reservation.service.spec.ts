@@ -58,6 +58,9 @@ describe('ReservationService', () => {
       const reservationInput = {
         hotelId: 'DALPAGI',
         rooms: [{ number: 123 }],
+        // Taken from the result of /sample-queries/reservationQuery.md
+        arrivalDate: "2021-07-02T07:00:00.000Z",
+        departureDate: "2021-07-19T07:00:00.000Z"
       } as unknown as ReservationInput;
       const mockReservation = {
         ...reservationInput,
@@ -79,6 +82,30 @@ describe('ReservationService', () => {
           _id: 'reservations::123456789',
         },
         { force: true },
+      );
+    });
+
+    it('Not successful: arrivalDate is before current date', async () => {
+      const reservationInput = {
+        hotelId: 'DALPAGI',
+        rooms: [{ number: 123 }],
+        arrivalDate: "2020-07-02T07:00:00.000Z",
+        departureDate: "2021-07-19T07:00:00.000Z"
+      } as unknown as ReservationInput;
+      await expect(reservationService.create(reservationInput)).rejects.toThrow(
+        'Cannot find record: reservations:: arrivalDate is before current date',
+      );
+    });
+
+    it('Not successful: departureDate is not after arrivalDate', async () => {
+      const reservationInput = {
+        hotelId: 'DALPAGI',
+        rooms: [{ number: 123 }],
+        arrivalDate: "2021-07-02T07:00:00.000Z",
+        departureDate: "2020-07-19T07:00:00.000Z"
+      } as unknown as ReservationInput;
+      await expect(reservationService.create(reservationInput)).rejects.toThrow(
+        'Cannot find record: reservations:: departureDate is not after arrivalDate',
       );
     });
   });
