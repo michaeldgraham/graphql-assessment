@@ -1,6 +1,5 @@
 import {
   Injectable,
-  Logger,
   HttpService,
 } from '@nestjs/common';
 import { NotFoundError } from '@gql/common';
