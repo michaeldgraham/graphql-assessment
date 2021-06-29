@@ -101,14 +101,10 @@ describe('/graphql reservations() query', () => {
     expect(res.body.errors).toBeFalsy();
     expect(res.body.data?.reservations).toEqual([
       {
-        "arrivalDate": "2021-07-24T07:00:00.000Z",
-        "departureDate": "2021-07-26T07:00:00.000Z",
-        "status": "IN_HOUSE"
+        status: 'IN_HOUSE'
       },
       {
-        "arrivalDate": "2021-07-17T07:00:00.000Z",
-        "departureDate": "2021-07-27T07:00:00.000Z",
-        "status": "CONFIRMED",
+        status: 'CONFIRMED'
       }
     ]);
   });

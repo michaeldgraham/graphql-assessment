@@ -1,7 +1,5 @@
 query reservationsQuery($args: ReservationsArgs!) {
   reservations(args: $args) {
-    arrivalDate
-    departureDate
     status
   }
 }
