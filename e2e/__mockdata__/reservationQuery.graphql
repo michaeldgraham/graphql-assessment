@@ -3,7 +3,31 @@ query reservationQuery($args: ReservationArgs!) {
     arrivalDate
     confirmationNumber
     departureDate
-    hotelId
+    hotel {
+      address {
+        street
+        city
+        postalCode
+        stateCode
+        countryCode
+      }
+      coordinate {
+        latitude
+        longitude
+      }
+      currencyCode
+      id
+      name
+      status
+      weather {
+        feelsLike
+        humidity
+        pressure
+        temp
+        tempMax
+        tempMin
+      }
+    }
     rooms {
       number
       priceAmountAfterTax
