@@ -65,3 +65,51 @@ describe('/graphql reservation() query', () => {
     );
   });
 });
+
+describe('/graphql reservations() query', () => {
+  let app: INestApplication;
+
+  beforeAll(async () => {
+    const moduleFixture = await Test.createTestingModule({
+      imports: [AppModule],
+    }).compile();
+
+    app = moduleFixture.createNestApplication();
+    await app.init();
+  });
+
+  it('Reservations found', async () => {
+    const res = await request(app.getHttpServer())
+      .post('/graphql')
+      .set('Accept', 'application/json')
+      .send({
+        query: readFileSync(
+          join(__dirname, '__mockdata__', 'reservationsQuery.graphql'),
+          'utf8',
+        ),
+        operationName: 'reservationsQuery',
+        variables: {
+          args: {
+            hotelId: "DALPAGI",
+            type: "FUTURE"
+          },
+        },
+      });
+
+    expect(res.status).toBe(200);
+    expect(res.body.data).toBeTruthy();
+    expect(res.body.errors).toBeFalsy();
+    expect(res.body.data?.reservations).toEqual([
+      {
+        "arrivalDate": "2021-07-24T07:00:00.000Z",
+        "departureDate": "2021-07-26T07:00:00.000Z",
+        "status": "IN_HOUSE"
+      },
+      {
+        "arrivalDate": "2021-07-17T07:00:00.000Z",
+        "departureDate": "2021-07-27T07:00:00.000Z",
+        "status": "CONFIRMED",
+      }
+    ]);
+  });
+});
