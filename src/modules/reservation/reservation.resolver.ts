@@ -3,6 +3,7 @@ import { Hotel, HotelService } from '@gql/module/hotel';
 import {
   Reservation,
   ReservationArgs,
+  ReservationsArgs,
   ReservationInput,
   ReservationService,
 } from '@gql/module/reservation';
@@ -26,6 +27,13 @@ export class ReservationResolver {
     @Args('args', { type: () => ReservationArgs }) args: ReservationArgs,
   ): Promise<Reservation> {
     return this.reservationService.get(args.confirmationNumber);
+  }
+
+  @Query(() => [Reservation])
+  async reservations(
+    @Args('args', { type: () => ReservationsArgs }) args: ReservationsArgs,
+  ): Promise<Reservation[]> {
+    return this.reservationService.getMany(args);
   }
 
   @ResolveField(() => Reservation)

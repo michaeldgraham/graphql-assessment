@@ -87,6 +87,7 @@ input NameInput {
 type Query {
   hotel(args: HotelArgs!): Hotel!
   reservation(args: ReservationArgs!): Reservation!
+  reservations(args: ReservationsArgs!): [Reservation!]!
 }
 
 type Reservation {
@@ -117,6 +118,18 @@ enum ReservationStatus {
   CHECKED_OUT
   CONFIRMED
   IN_HOUSE
+}
+
+enum ReservationType {
+  CANCELLED
+  CURRENT
+  FUTURE
+  PAST
+}
+
+input ReservationsArgs {
+  hotelId: String!
+  type: ReservationType
 }
 
 type Room {
