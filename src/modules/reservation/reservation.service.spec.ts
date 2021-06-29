@@ -139,4 +139,198 @@ describe('ReservationService', () => {
       expect(mockTransformReservation).not.toHaveBeenCalled();
     });
   });
+
+  describe('getMany()', () => {
+    const mockReservations = [
+      {
+        hotelId: 'DALPAGI',
+        status: 'cancelled',
+        arrivalDate: '2021-06-16T07:00:00.000Z',  
+        departureDate: '2021-06-18T07:00:00.000Z'
+      },
+      {
+        hotelId: 'DALPAGI',
+        status: 'inHouse',
+        arrivalDate: '2021-07-23T07:00:00.000Z',
+        departureDate: '2021-07-25T07:00:00.000Z'
+      },
+      {
+        hotelId: 'DALPAGI',
+        status: 'confirmed',
+        arrivalDate: '2021-06-19T07:00:00.000Z',
+        departureDate: '2021-06-20T07:00:00.000Z'
+      },
+      {
+        hotelId: 'DALPAGI',
+        status: 'confirmed',
+        arrivalDate: '2021-07-16T07:00:00.000Z',
+        departureDate: '2021-07-26T07:00:00.000Z'
+      },
+      {
+        hotelId: 'DALPAGI',
+        status: 'confirmed',
+        arrivalDate: '2021-05-29T07:00:00.000Z',
+        departureDate: '2021-06-29T07:00:00.000Z'
+      },
+      {
+        hotelId: 'DALPAGI',
+        status: 'cancelled',
+        arrivalDate: '2021-06-16T07:00:00.000Z',
+        departureDate: '2021-07-14T07:00:00.000Z'
+      },
+      {
+        hotelId: 'DALPAGI',
+        status: 'confirmed',
+        arrivalDate: '2021-06-14T07:00:00.000Z',
+        departureDate: '2021-07-13T07:00:00.000Z'
+      },
+      {
+        hotelId: 'DALPAGI',
+        status: 'inHouse',
+        arrivalDate: '2021-06-03T07:00:00.000Z',
+        departureDate: '2021-06-17T07:00:00.000Z'
+      }
+    ];
+
+    it('Found all reservations', async () => {
+      mockPouchDbFind.mockReturnValue(
+        Promise.resolve({ docs: mockReservations }),
+      );
+
+      const reservations = await reservationService.getMany({
+        hotelId: "DALPAGI"
+      });
+
+      expect(mockPouchDbFind).toHaveBeenCalledWith({
+        selector: { hotelId: "DALPAGI" },
+      });
+      expect(reservations.length).toBe(8);
+      expect(mockTransformReservation).toHaveBeenCalledTimes(8);
+      expect(reservations).toEqual(mockReservations);
+    });
+
+    it('Found cancelled reservations', async () => {
+      mockPouchDbFind.mockReturnValue(
+        Promise.resolve({ docs: mockReservations }),
+      );
+
+      const reservations = await reservationService.getMany({
+        hotelId: "DALPAGI",
+        type: "cancelled"
+      });
+
+      expect(mockPouchDbFind).toHaveBeenCalledWith({
+        selector: { hotelId: "DALPAGI" },
+      });
+      expect(reservations.length).toBe(2);
+      expect(mockTransformReservation).toHaveBeenCalledTimes(2);
+      expect(reservations).toEqual([
+        {
+          hotelId: 'DALPAGI',
+          status: 'cancelled',
+          arrivalDate: '2021-06-16T07:00:00.000Z',
+          departureDate: '2021-06-18T07:00:00.000Z'
+        },
+        {
+          hotelId: 'DALPAGI',
+          status: 'cancelled',
+          arrivalDate: '2021-06-16T07:00:00.000Z',
+          departureDate: '2021-07-14T07:00:00.000Z'
+        }
+      ]);
+    });
+
+    it('Found current reservations', async () => {
+      mockPouchDbFind.mockReturnValue(
+        Promise.resolve({ docs: mockReservations }),
+      );
+
+      const reservations = await reservationService.getMany({
+        hotelId: "DALPAGI",
+        type: "current"
+      });
+
+      expect(mockPouchDbFind).toHaveBeenCalledWith({
+        selector: { hotelId: "DALPAGI" },
+      });
+      expect(reservations.length).toBe(1);
+      expect(mockTransformReservation).toHaveBeenCalledTimes(1);
+      expect(reservations).toEqual([
+        {
+          hotelId: 'DALPAGI',
+          status: 'confirmed',
+          arrivalDate: '2021-06-14T07:00:00.000Z',
+          departureDate: '2021-07-13T07:00:00.000Z'
+        }
+      ]);
+    });
+
+    it('Found future reservations', async () => {
+      mockPouchDbFind.mockReturnValue(
+        Promise.resolve({ docs: mockReservations }),
+      );
+
+      const reservations = await reservationService.getMany({
+        hotelId: "DALPAGI",
+        type: "future"
+      });
+
+      expect(mockPouchDbFind).toHaveBeenCalledWith({
+        selector: { hotelId: "DALPAGI" },
+      });
+      expect(reservations.length).toBe(2);
+      expect(mockTransformReservation).toHaveBeenCalledTimes(2);
+      expect(reservations).toEqual([
+        {
+          hotelId: 'DALPAGI',
+          status: 'inHouse',
+          arrivalDate: '2021-07-23T07:00:00.000Z',
+          departureDate: '2021-07-25T07:00:00.000Z'
+        },
+        {
+          hotelId: 'DALPAGI',
+          status: 'confirmed',
+          arrivalDate: '2021-07-16T07:00:00.000Z',
+          departureDate: '2021-07-26T07:00:00.000Z'
+        }
+      ]);
+    });
+
+    it('Found past reservations', async () => {
+      mockPouchDbFind.mockReturnValue(
+        Promise.resolve({ docs: mockReservations }),
+      );
+
+      const reservations = await reservationService.getMany({
+        hotelId: "DALPAGI",
+        type: "past"
+      });
+
+      expect(mockPouchDbFind).toHaveBeenCalledWith({
+        selector: { hotelId: "DALPAGI" },
+      });
+      expect(reservations.length).toBe(3);
+      expect(mockTransformReservation).toHaveBeenCalledTimes(3);
+      expect(reservations).toEqual([
+        {
+          hotelId: 'DALPAGI',
+          status: 'confirmed',
+          arrivalDate: '2021-06-19T07:00:00.000Z',
+          departureDate: '2021-06-20T07:00:00.000Z'
+        },
+        {
+          hotelId: 'DALPAGI',
+          status: 'confirmed',
+          arrivalDate: '2021-05-29T07:00:00.000Z',
+          departureDate: '2021-06-29T07:00:00.000Z'
+        },
+        {
+          hotelId: 'DALPAGI',
+          status: 'inHouse',
+          arrivalDate: '2021-06-03T07:00:00.000Z',
+          departureDate: '2021-06-17T07:00:00.000Z'
+        }
+      ]);
+    });
+  });  
 });
