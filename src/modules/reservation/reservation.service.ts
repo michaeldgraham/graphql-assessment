@@ -32,7 +32,11 @@ export class ReservationService {
    * @param reservationInput
    * @returns
    */
-  async create(reservationInput: ReservationInput): Promise<Reservation> {
+   async create(reservationInput: ReservationInput): Promise<Reservation> {
+     
+    // Validate scheduling
+    this.validateSchedule(reservationInput);
+
     // Resolve hotel
     await this.hotelService.get(reservationInput.hotelId);
 
@@ -56,9 +60,18 @@ export class ReservationService {
     };
 
     await this.reservationDb.put(reservationDoc, { force: true });
+
     return reservation;
   }
 
+  validateSchedule(reservationInput: ReservationInput) {
+    const { arrivalDate, departureDate }: { arrivalDate: Date, departureDate: Date } = reservationInput;
+    const arrivalAfterNow = new Date(arrivalDate) >= new Date();
+    const departureAfterArrival = new Date(departureDate) > new Date(arrivalDate);
+    if(!arrivalAfterNow) throw new NotFoundError(`reservations:: arrivalDate is before current date`);
+    if(!departureAfterArrival) throw new NotFoundError(`reservations:: departureDate is not after arrivalDate`);
+  }
+  
   /**
    * Retrieve reservation by confirmation number.
    *
