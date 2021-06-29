@@ -38,6 +38,14 @@ describe('/graphql hotel() query', () => {
     expect(res.body.data).toBeTruthy();
     expect(res.body.errors).toBeFalsy();
     expect(res.body.data?.hotel.id).toBe('DALPPHX');
+    expect(res.body.data?.hotel.weather).toEqual({
+      "feelsLike": expect.any(Number),
+      "humidity": expect.any(Number),
+      "pressure": expect.any(Number),
+      "temp": expect.any(Number),
+      "tempMax": expect.any(Number),
+      "tempMin": expect.any(Number)
+    });
   });
 
   it('Hotel not found', async () => {

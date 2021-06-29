@@ -15,5 +15,13 @@ query hotelQuery($args: HotelArgs!) {
     id
     name
     status
+    weather {
+      feelsLike
+      humidity
+      pressure
+      temp
+      tempMax
+      tempMin
+    }
   }
 }

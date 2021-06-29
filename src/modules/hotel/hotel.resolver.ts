@@ -17,7 +17,7 @@ export class HotelResolver {
   }
 
   @ResolveField(() => Weather, { nullable: true })
-  async weather(@Parent() { coordinate }: Hotel): Promise<Weather> {
-    return this.weatherService.get(coordinate);
+  async weather(@Parent() { coordinate }: Hotel): Promise<void | Weather> {
+    return await this.weatherService.get(coordinate);
   }
 }
