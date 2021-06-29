@@ -32,8 +32,7 @@ export class ReservationService {
    * @param reservationInput
    * @returns
    */
-   async create(reservationInput: ReservationInput): Promise<Reservation> {
-     
+  async create(reservationInput: ReservationInput): Promise<Reservation> {
     // Validate scheduling
     this.validateSchedule(reservationInput);
 
@@ -65,13 +64,23 @@ export class ReservationService {
   }
 
   validateSchedule(reservationInput: ReservationInput) {
-    const { arrivalDate, departureDate }: { arrivalDate: Date, departureDate: Date } = reservationInput;
+    const {
+      arrivalDate,
+      departureDate,
+    }: { arrivalDate: Date; departureDate: Date } = reservationInput;
     const arrivalAfterNow = new Date(arrivalDate) >= new Date();
-    const departureAfterArrival = new Date(departureDate) > new Date(arrivalDate);
-    if(!arrivalAfterNow) throw new NotFoundError(`reservations:: arrivalDate is before current date`);
-    if(!departureAfterArrival) throw new NotFoundError(`reservations:: departureDate is not after arrivalDate`);
+    const departureAfterArrival =
+      new Date(departureDate) > new Date(arrivalDate);
+    if (!arrivalAfterNow)
+      throw new NotFoundError(
+        `reservations:: arrivalDate is before current date`,
+      );
+    if (!departureAfterArrival)
+      throw new NotFoundError(
+        `reservations:: departureDate is not after arrivalDate`,
+      );
   }
-  
+
   /**
    * Retrieve reservation by confirmation number.
    *
@@ -91,6 +100,40 @@ export class ReservationService {
       throw new NotFoundError(`reservations::${confirmationNumber}`);
     }
     return transformReservation(reservation);
+  }
+
+  /**
+   * Retrieve reservations by hotel id and filter by type
+   *
+   * @param hotelId
+   * @param type
+   * @returns
+   */
+  async getMany(args) {
+    const { hotelId, type }: { hotelId: string; type: string } = args;
+    const reservations = (
+      await this.reservationDb.find({
+        selector: { hotelId },
+      })
+    )?.docs as unknown as ReservationDocument[];
+    if (type) {
+      const currentDate = new Date();
+      const filtered = reservations.filter((reservation) => {
+        const status = reservation.status;
+        const arrivalDate = new Date(reservation.arrivalDate);
+        const departureDate = new Date(reservation.departureDate);
+        if (status === 'cancelled') return type === 'cancelled';
+        else {
+          return (
+            (type === 'current' && arrivalDate <= currentDate && departureDate >= currentDate) ||
+            (type === 'future' && arrivalDate >= currentDate) ||
+            (type === 'past' && departureDate < currentDate)
+          );
+        }
+      });
+      return filtered.map((reservation) => transformReservation(reservation));
+    }
+    return reservations.map((reservation) => transformReservation(reservation));
   }
 
   /**
