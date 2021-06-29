@@ -93,7 +93,7 @@ type Reservation {
   arrivalDate: DateTime!
   confirmationNumber: Int!
   departureDate: DateTime!
-  hotelId: String!
+  hotel: Hotel!
   rooms: [Room!]!
   status: ReservationStatus!
   user: User!
