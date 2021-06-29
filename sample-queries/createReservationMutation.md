@@ -8,7 +8,8 @@ mutation createReservationMutation($input: ReservationInput!) {
     arrivalDate
     confirmationNumber
     departureDate
-    hotelId
+    # Removed because Reservation.hotelId is hidden as per Deliverable 2.1 bullet point 2
+    # hotelId
     rooms {
       number
       priceAmountAfterTax
